@@ -4,7 +4,7 @@
     | |/ __| '_ \  / _ \ | |/ /  _|     
     | |\__ \ | | |/ ___ \|   <| |___    
     |_||___/_| |_/_/   \_\_|\_\_____|   
-              CH > @MaxFlyTM
+              CH > #ThunderTeam
 --]]
 serpent = require('serpent')
 serp = require 'serpent'.block
@@ -4283,263 +4283,263 @@ end
       end
       end
       end
-      if mutept[2] == "location ban" or TSHAKE[2] == "الشبكات بالطرد" then
+      if mutept[2] == "location ban" or TSHAKE[2] == "مسدودیت مکان" then
 	  if not database:get('bot:location:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> location ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل الشبكات `🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● -ارسال مختصات جغرافیایی در گروه ممنوع شد\n حالت مسدودیت فعال است ☑️', 1, 'md')
       end
          database:set('bot:location:ban'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> location ban is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل الشبكات` 🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مختصات جغرافیایی در گروه از قبل ممنوع میباشد! \n حالت مسدودیت از قبل فعال میباشد ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "location warn" or TSHAKE[2] == "الشبكات بالتحذير" then
+      if mutept[2] == "location warn" or TSHAKE[2] == "هشدار مکان" then
 	  if not database:get('bot:location:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> location ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل الشبكات `🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● -ارسال مختصات جغرافیایی در گروه #باموفقیت ممنوع شد \n حالت هشدار #باموفقیت فعال شد ☑️', 1, 'md')
       end
          database:set('bot:location:warn'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> location warn is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل الشبكات` 🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ` ارسال مختصات جغرافیایی در گروه از قبل #ممنوع میباشد! \n حالت هشدار از قبل فعال میباشد ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "tag" or TSHAKE[2] == "المعرف" then
+      if mutept[2] == "tag" or TSHAKE[2] == "تگ" then
 	  if not database:get('bot:tag:mute'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> tag has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل المعرفات <@> `🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [@] در گروه #باموفقیت ممنوع شد☑️', 1, 'md')
       end
          database:set('bot:tag:mute'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> tag is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل المعرفات <@>` 🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [@] در گروه از قبل #ممنوع شده بود☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "tag ban" or TSHAKE[2] == "المعرف بالطرد" then
+      if mutept[2] == "tag ban" or TSHAKE[2] == "مسدودیت تگ" then
 	  if not database:get('bot:tag:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> tag ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل المعرفات <@> `🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [@] در گروه #باموفقیت ممنوع شد! \n حالت مسدودیت #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:tag:ban'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> tag ban is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل المعرفات <@>` 🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [@] در گروه از قبل #ممنوع میباشد! \n حالت مسدودیت از قبل فعال #میباشد ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "tag warn" or TSHAKE[2] == "المعرف بالتحذير" then
+      if mutept[2] == "tag warn" or TSHAKE[2] == "هشدار تگ" then
 	  if not database:get('bot:tag:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> tag ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل المعرفات <@> `🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [@] در گروه #باموفقیت ممنوع شد\n حالت هشدار #فعال میباشد!☑️', 1, 'md')
       end
          database:set('bot:tag:warn'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> tag warn is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل المعرفات <@>` 🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [@] در گروه از قبل #ممنوع میباشد!\n حالت هشدار از قبل #ممنوع میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "hashtag" or TSHAKE[2] == "التاك" then
+      if mutept[2] == "hashtag" or TSHAKE[2] == "هشتگ" then
 	  if not database:get('bot:hashtag:mute'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> hashtag has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل التاكات <#> `🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [#] در گروه #باموفقیت ممنوع شد ☑️', 1, 'md')
       end
          database:set('bot:hashtag:mute'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> hashtag is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل التاكات <#>` 🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [#] در گروه از قبل #ممنوع میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "hashtag ban" or TSHAKE[2] == "التاك بالطرد" then
+      if mutept[2] == "hashtag ban" or TSHAKE[2] == "مسدودیت هشتگ" then
 	  if not database:get('bot:hashtag:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> hashtag ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل التاكات <#> `🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [#] در گروه #باموفقیت ممنوع شد \n حالت مسدودیت #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:hashtag:ban'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> hashtag ban is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل التاكات <#>` 🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [#] در گروه از قبل #ممنوع میباشد!\n حالت مسدودیت از قبل فعال میباشد` ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "hashtag warn" or TSHAKE[2] == "التاك بالتحذير" then
+      if mutept[2] == "hashtag warn" or TSHAKE[2] == "هشدار هشتگ" then
 	  if not database:get('bot:hashtag:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> hashtag ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل التاكات <#> `🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● -ارسال [#] در گروه #باموفقیت ممنوع شد\n حالت هشدار #فعال میباشد ☑️', 1, 'md')
       end
          database:set('bot:hashtag:warn'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> hashtag warn is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل التاكات <#>` 🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال [#] در گروه از قبل #ممنوع میباشد!\nحالت هشدار از قبل #فعال میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "contact" or TSHAKE[2] == "الجهات" then
+      if mutept[2] == "contact" or TSHAKE[2] == "مخاطب" then
 	  if not database:get('bot:contact:mute'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> contact has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل جهات الاتصال `🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مخاطب در گروه #باموفقیت ممنوع شد ☑️', 1, 'md')
       end
          database:set('bot:contact:mute'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> contact is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل جهات الاتصال` 🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مخاطب درگروه از قبل #ممنوع میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "contact ban" or TSHAKE[2] == "الجهات بالطرد" then
+      if mutept[2] == "contact ban" or TSHAKE[2] == "مسدودیت مخاطب" then
 	  if not database:get('bot:contact:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> contact ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل جهات الاتصال `🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مخاطب در گروه #باموفقیت ممنوع شد\n حالت مسدودیت #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:contact:ban'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> contact ban is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل جهات الاتصال` 🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مخاطب در گروه از قبل #ممنوع میباشد!\n حالت مسدودیت از قبل #فعال میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "contact warn" or TSHAKE[2] == "الجهات بالتحذير" then
+      if mutept[2] == "contact warn" or TSHAKE[2] == "هشدار مخاطب" then
 	  if not database:get('bot:contact:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> contact ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل جهات الاتصال `🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مخاطب در گروه #باموفقیت ممنوع شد\n حالت هشدار #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:contact:warn'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> contact warn is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل جهات الاتصال` 🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال مخاطب در گروه #ممنوع میباشد! \n حالت هشدار #فعال میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "webpage" or TSHAKE[2] == "المواقع" then
+      if mutept[2] == "webpage" or TSHAKE[2] == "صفحات اینترنتی" then
 	  if not database:get('bot:webpage:mute'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> webpage has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل المواقع `🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال صفحات اینترنتی در گروه #باموفقیت ممنوع میباشد! ☑️', 1, 'md')
       end
          database:set('bot:webpage:mute'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> webpage is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل المواقع` 🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال صفحات اینترنتی در گروه از قبل #ممنوع میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "webpage ban" or TSHAKE[2] == "المواقع بالطرد" then
+      if mutept[2] == "webpage ban" or TSHAKE[2] == "مسدودیت صفحات اینترنتی" then
 	  if not database:get('bot:webpage:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> webpage ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل المواقع `🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال صفحات اینترنتی در گروه #باموفقیت ممنوع شد!\n حالت مسدودیت #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:webpage:ban'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> webpage ban is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل المواقع` 🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال صفحات اینترنتی از قبل #ممنوع میباشد! \n حالت مسدودیت از قبل #فعال میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "webpage warn" or TSHAKE[2] == "المواقع بالتحذير" then
+      if mutept[2] == "webpage warn" or TSHAKE[2] == "هشدار صفحات اینترنتی" then
 	  if not database:get('bot:webpage:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> webpage ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل المواقع `🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال صفحات اینترنتی در گروه #باموفقیت ممنوع شد! \n حالت هشدار #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:webpage:warn'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> webpage warn is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل المواقع` 🔐\n\n● - `خاصية : التحذير` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال صفحات اینترنتی در گروه از قبل #ممنوع میباشد! \n حالت هشدار از قبل #فعال میباشد! ☑️', 1, 'md')
       end
       end
     end
-      if mutept[2] == "arabic" or TSHAKE[2] == "العربيه" then
+      if mutept[2] == "arabic" or TSHAKE[2] == "عربی" then
 	  if not database:get('bot:arabic:mute'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> arabic has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل العربيه `🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال کلمات `[عربی]` در گروه #بامفقیت ممنوع شد ☑️', 1, 'md')
       end
          database:set('bot:arabic:mute'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> arabic is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل العربيه` 🔐\n\n● - `خاصية : المسح` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال کلمات `[عربی]` در گروه از قبل #ممنوع میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "arabic ban" or TSHAKE[2] == "العربيه بالطرد" then
+      if mutept[2] == "arabic ban" or TSHAKE[2] == "مسدودیت عربی" then
 	  if not database:get('bot:arabic:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> arabic ban has been_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم` ✔️ `قفل العربيه `🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال کلمات `[عربی]` در گروه #باموفقیت ممنوع شد!\n حالت مسدودیت #فعال میباشد! ☑️', 1, 'md')
       end
          database:set('bot:arabic:ban'..msg.chat_id_,true)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> arabic ban is already_ *Locked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `قفل العربيه` 🔐\n\n● - `خاصية : الطرد` ☑️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال کلمات `[عربی]` در گروه از قبل #ممنوع میباشد!\nحالت مسدودیت از قبل #فعال میباشد! ☑️', 1, 'md')
       end
       end
       end
-      if mutept[2] == "arabic warn" or TSHAKE[2] == "العربيه بالتحذير" then
+      if mutept[2] == "arabic warn" or TSHAKE[2] == "هشدار عربی" then
 	  if not database:get('bot:arabic:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> arabic ban has been_ *Locked*', 1, 'md')
@@ -8292,7 +8292,7 @@ end
                 send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
    end
    
-if text:match("^source$") or text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
+if text:match("^source$") or text:match("^کانال سازنده$") or text:match("^چنل سازنده$") or text:match("^سورس$") or text:match("^سورس$") then
    
    local text =  [[
 • <code>اهلا بك في سورس تشاكي</code> 🦁ֆ
@@ -8300,8 +8300,8 @@ if text:match("^source$") or text:match("^اصدار$") or text:match("^الاص
 • <code>المطورين</code> ⚜️:-
 • <b>MaxFlyTM TEAM </b>
 
-• <code>قناه السورس</code> ❇️:-
-•<b> Channel</b> | @MaxFlyTM
+• <code>کانال سازنده سورس</code> ❇️:-
+•<b> Channel</b> | @ThunderTeam
 
 
 
