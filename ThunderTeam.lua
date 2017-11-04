@@ -5006,39 +5006,39 @@ end
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> inline is already_ *unLocked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `فتح الانلاين` 🔓\n\n● - `خاصية : المسح` ⚠️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال `کیبورد شیشه ای` در گروه از قبل #مجاز بود! ⚠️', 1, 'md')
       end
       end
       end
-      if unmutept[2] == "inline ban" or UNTSHAKE[2] == "الانلاين بالطرد" then
+      if unmutept[2] == "inline ban" or UNTSHAKE[2] == "مسدودیت کیبورد شیشه ای" then
 	  if database:get('bot:inline:ban'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> inline ban has been_ *unLocked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم `✔️ `فتح الانلاين `🔓\n\n● - `خاصية : الطرد `⚠️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال `کیبورد شیشه ای` در گروه #باموفقیت مجاز شد!\nحالت مسدودیت #غیرفعال میباشد! ⚠️', 1, 'md')
       end
          database:del('bot:inline:ban'..msg.chat_id_)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> inline ban is already_ *unLocked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `فتح الانلاين` 🔓\n\n● - `خاصية : الطرد` ⚠️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال `کیبورد شیشه ای` در گروه از قبل #مجاز میباشد!\nحالت مسدودیت از قبل #غیرفعال میباشد! ⚠️', 1, 'md')
       end
       end
       end
-      if unmutept[2] == "inline warn" or UNTSHAKE[2] == "الانلاين بالتحذير" then
+      if unmutept[2] == "inline warn" or UNTSHAKE[2] == "هشدار کیبورد شیشه ای" then
 	  if database:get('bot:inline:warn'..msg.chat_id_) then
     if database:get('lang:gp:'..msg.chat_id_) then
          send(msg.chat_id_, msg.id_, 1, '_> inline ban has been_ *unLocked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `تم `✔️ `فتح الانلاين `🔓\n\n● - `خاصية : التحذير `⚠️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال `کیبورد شیشه ای` در گروه #باموفقیت مجاز شد!\n حالت هشدار #غیرفعال میباشد!⚠️', 1, 'md')
       end
          database:del('bot:inline:warn'..msg.chat_id_)
       else
     if database:get('lang:gp:'..msg.chat_id_) then
                   send(msg.chat_id_, msg.id_, 1, '_> inline warn is already_ *unLocked*', 1, 'md')
       else
-         send(msg.chat_id_, msg.id_, 1, '● - `بالفعل تم` ✔️ `فتح الانلاين` 🔓\n\n● - `خاصية : التحذير` ⚠️', 1, 'md')
+         send(msg.chat_id_, msg.id_, 1, '● - ارسال `کیبورد شیشه ای` در گروه از قبل #مجاز میباشد!\nحالت هشدار از قبل #غیرفعال میباشد! ⚠️', 1, 'md')
       end
       end
       end
